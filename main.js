@@ -35,8 +35,7 @@ function login()
     {
         if((un==username)&&(pwd==password)){
             localStorage.setItem('key',token());
-            console.log(localStorage);
-            alert('Thank You for Login & You are Redirecting to Your dashboard');            
+            console.log(localStorage);           
             window.location.href="main.html";
             /*return true;*/
         }
@@ -50,8 +49,7 @@ function login()
  
 function logout(){
     localStorage.removeItem('key');
-    console.log(localStorage);
-    alert('Logging out !!!');   
+    console.log(localStorage); 
     window.location.href="index.html"; 
 }
 
